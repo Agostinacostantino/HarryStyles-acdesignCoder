@@ -148,7 +148,6 @@ main{
             grid-template-rows: 100%;
             justify-content: center;
             column-gap: 10%;
-            padding-bottom: 5%;
             padding-top: 3%;
 
             figure{
@@ -201,6 +200,19 @@ main{
                     }
                 }
             }
+        }
+    }
+
+    .escucharMusica{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap:  5%;
+        justify-content: center;
+        padding-bottom: 5%;
+
+        iframe{
+            width: 30%;
         }
     }
 
