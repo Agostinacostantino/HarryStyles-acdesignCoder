@@ -1,0 +1,58 @@
+header{
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    top: 0%;
+    
+    img{
+        width: 300px;
+        height: auto;
+    }
+
+    .navbar{
+        justify-content: center;
+
+        .container-fluid{
+            width: fit-content;
+            margin: 0;
+
+            .navbar-toggler{
+                border: none;
+
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            
+            .nav-item{
+                font-family: proxima-nova, sans-serif;
+                font-weight: 500;
+                font-size: 1.2rem;
+                font-style: italic;
+
+                .nav-link{
+                    text-decoration: none;
+                    color: $color_claro;
+                }
+            }
+
+        }
+    }
+}
+
+
+button.navbar-toggler>span{
+    background:$color_claro ;
+    height: 3px;
+    width: 28px;
+    display: block;
+    transition: .1s transform ease;
+}
+
+button.navbar-toggler, button.navbar-toggler>span{
+    position: relative;
+    margin: 0.3em;
+    cursor: pointer;
+    border-radius: 0.1em;
+}

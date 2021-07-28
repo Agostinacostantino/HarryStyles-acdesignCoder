@@ -1,0 +1,15 @@
+@import "base/reset";
+@import "utilities/variables";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+@import "layout/mediaq";
+
+body{
+    background-color: rgb(15, 13, 17);
+    width: 100%;
+}
+
+.bodyError{
+    background-image: url(../IMAGENES/fondo404.png);
+}

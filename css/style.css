@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none; }
+
+header {
+  width: 100%;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  top: 0%; }
+  header img {
+    width: 300px;
+    height: auto; }
+  header .navbar {
+    justify-content: center; }
+    header .navbar .container-fluid {
+      width: fit-content;
+      margin: 0; }
+      header .navbar .container-fluid .navbar-toggler {
+        border: none; }
+        header .navbar .container-fluid .navbar-toggler:focus {
+          box-shadow: none; }
+      header .navbar .container-fluid .nav-item {
+        font-family: proxima-nova, sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+        font-style: italic; }
+        header .navbar .container-fluid .nav-item .nav-link {
+          text-decoration: none;
+          color: #e5d9fc; }
+
+button.navbar-toggler > span {
+  background: #e5d9fc;
+  height: 3px;
+  width: 28px;
+  display: block;
+  transition: .1s transform ease; }
+
+button.navbar-toggler, button.navbar-toggler > span {
+  position: relative;
+  margin: 0.3em;
+  cursor: pointer;
+  border-radius: 0.1em; }
+
+/*main INDEX*/
+main .banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: rgba(112, 91, 152, 0.534);
+  width: 95%;
+  height: 605px;
+  margin-left: 2.5%;
+  border-radius: 20px;
+  border: 2px solid #e5d9fc;
+  align-items: center; }
+  main .banner .bannerPortada {
+    margin-left: 4%;
+    justify-self: center; }
+    main .banner .bannerPortada img {
+      width: 650px;
+      height: 600px; }
+  main .banner .bannerTexto {
+    text-align: center;
+    margin-right: 6%;
+    margin-bottom: 5%;
+    color: #0f0d11; }
+    main .banner .bannerTexto h1 {
+      font-family: proxima-nova, sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 600%;
+      height: 80px; }
+    main .banner .bannerTexto .newAlbum {
+      font-family: proxima-nova, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 250%;
+      height: 20px; }
+    main .banner .bannerTexto h2 {
+      font-family: proxima-nova, sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 500%;
+      height: 80px; }
+    main .banner .bannerTexto .outNow {
+      font-family: proxima-nova, sans-serif;
+      font-weight: 900;
+      font-style: normal;
+      font-size: 200%;
+      margin-bottom: 0; }
+    main .banner .bannerTexto button {
+      width: 350px;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      margin-top: 3%;
+      font-family: proxima-nova, sans-serif;
+      font-weight: 600;
+      font-style: italic;
+      font-size: 150%;
+      background-color: #0f0d11;
+      border-radius: 20px;
+      cursor: pointer; }
+      main .banner .bannerTexto button a {
+        text-decoration: none;
+        color: #e5d9fc; }
+
+main .videoIndex {
+  width: 100%;
+  background-color: #0f0d11;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e5d9fc;
+  margin-top: 5%; }
+  main .videoIndex h3 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 400%;
+    color: #0f0d11;
+    margin-top: 3%;
+    margin-bottom: 2%; }
+  main .videoIndex div {
+    width: 95%;
+    height: auto; }
+    main .videoIndex div iframe {
+      width: 90%;
+      height: 600px;
+      border-radius: 20px;
+      border: 2px solid #0f0d11;
+      margin-left: 4.5%; }
+
+main .carousel-inner {
+  margin-top: 5%; }
+
+/*fin main INDEX*/
+/*main MUSIC*/
+main .h1General {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: #e5d9fc;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 400%;
+  padding-top: 3%; }
+
+main div .cds, main div .sencillos {
+  display: grid;
+  height: auto;
+  width: 100%;
+  grid-template-columns: 25% 25%;
+  grid-template-rows: 100%;
+  justify-content: center;
+  column-gap: 10%;
+  padding-bottom: 5%;
+  padding-top: 3%; }
+  main div .cds figure, main div .sencillos figure {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5%;
+    cursor: pointer; }
+    main div .cds figure img, main div .sencillos figure img {
+      width: 100%;
+      height: 100%;
+      transition: all 500ms ease-out; }
+    main div .cds figure .streamCd, main div .sencillos figure .streamCd, main div .sencillos figure .streamCancion {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(112, 91, 152, 0.534);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+      main div .cds figure .streamCd a, main div .sencillos figure .streamCd a, main div .sencillos figure .streamCancion a {
+        text-decoration: none;
+        color: #0f0d11; }
+    main div .cds figure:hover > .streamCd, main div .sencillos figure:hover > .streamCd, main div .sencillos .cds figure:hover > .streamCancion, main div .sencillos figure:hover > .streamCancion {
+      opacity: 1;
+      visibility: visible; }
+      main div .cds figure:hover > .streamCd button, main div .sencillos figure:hover > .streamCd button, main div .sencillos .cds figure:hover > .streamCancion button, main div .sencillos figure:hover > .streamCancion button {
+        margin-top: 45%;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 100%;
+        border-radius: 20px;
+        background-color: #e5d9fc;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        padding-left: 8%;
+        padding-right: 8%; }
+
+main div .sencillos {
+  grid-template-columns: 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+  column-gap: 5%;
+  row-gap: 3%; }
+  main div .sencillos figure {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5%;
+    cursor: pointer; }
+    main div .sencillos figure img {
+      width: 100%;
+      height: 100%;
+      transition: all 500ms ease-out; }
+    main div .sencillos figure .streamCancion a {
+      text-decoration: none;
+      color: #0f0d11; }
+    main div .sencillos figure:hover > .streamCancion {
+      opacity: 1;
+      visibility: visible; }
+      main div .sencillos figure:hover > .streamCancion button {
+        margin-top: 45%;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 100%;
+        border-radius: 20px;
+        background-color: #e5d9fc;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        padding-left: 8%;
+        padding-right: 8%; }
+
+/*fin main MUSIC*/
+/*main MULTIMEDIA*/
+main .galeriaFotos {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 400px 400px;
+  grid-template-areas: "foto1   foto2   foto3" "foto4   foto5   foto6";
+  justify-content: center;
+  align-items: center;
+  column-gap: 5%;
+  row-gap: 3%;
+  padding-top: 7%;
+  padding-bottom: 5%; }
+  main .galeriaFotos .galeria1, main .galeriaFotos .galeria2, main .galeriaFotos .galeria3, main .galeriaFotos .galeria4, main .galeriaFotos .galeria5, main .galeriaFotos .galeria6 {
+    grid-area: foto1;
+    width: 100%;
+    height: auto;
+    object-fit: cover; }
+  main .galeriaFotos .galeria2 {
+    grid-area: foto2; }
+  main .galeriaFotos .galeria3 {
+    grid-area: foto3; }
+  main .galeriaFotos .galeria4 {
+    grid-area: foto4; }
+  main .galeriaFotos .galeria5 {
+    grid-area: foto5; }
+  main .galeriaFotos .galeria6 {
+    grid-area: foto6; }
+
+main .h2Multimedia {
+  position: absolute;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 400%;
+  color: #e5d9fc;
+  margin-left: 42%;
+  padding-top: 3%; }
+
+main .videos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between; }
+  main .videos iframe {
+    margin-top: 10%;
+    border-radius: 20px;
+    border: 2px solid #e5d9fc; }
+  main .videos .video2 {
+    margin-top: 3%;
+    border-radius: 20px;
+    border: 2px solid #e5d9fc;
+    margin-bottom: 5%; }
+
+/*fin main MULTIMEDIA*/
+/*main TOUR*/
+main .tour {
+  width: 100%;
+  position: relative; }
+  main .tour .bannerTour {
+    position: absolute;
+    width: 100%; }
+  main .tour .tourTexto {
+    position: absolute;
+    width: 100%; }
+    main .tour .tourTexto .harryStyles {
+      display: inline-block;
+      font-family: proxima-nova, sans-serif;
+      font-weight: 900;
+      font-size: 700%;
+      font-style: normal;
+      color: #e5d9fc;
+      line-height: 80%;
+      text-align: center;
+      margin-left: 63%;
+      padding-top: 6%; }
+    main .tour .tourTexto .tourName {
+      display: inline-block;
+      font-family: proxima-nova, sans-serif;
+      font-weight: 900;
+      font-size: 350%;
+      font-style: normal;
+      color: #e5d9fc;
+      text-align: center;
+      margin-left: 63%; }
+
+main .tablaConciertos {
+  width: 100%;
+  padding-top: 45%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; }
+  main .tablaConciertos table {
+    display: table-column;
+    border-spacing: 300px 50px;
+    border-collapse: inherit; }
+    main .tablaConciertos table tr th {
+      font-family: proxima-nova, sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 350%;
+      color: #e5d9fc; }
+    main .tablaConciertos table tr td {
+      text-align: center;
+      font-family: proxima-nova, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 150%;
+      color: #e5d9fc; }
+      main .tablaConciertos table tr td button {
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-top: 4.5%;
+        padding-bottom: 4%;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 130%;
+        margin-top: 2%;
+        background-color: #e5d9fc;
+        border-radius: 20px;
+        cursor: pointer; }
+        main .tablaConciertos table tr td button a {
+          text-decoration: none;
+          color: #0f0d11; }
+
+/*fin main TOUR*/
+/*main SUSCRIBE*/
+main .formulario {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%; }
+  main .formulario form {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column; }
+    main .formulario form .formularioDatos {
+      margin-bottom: 3%;
+      padding-bottom: 3%;
+      padding-top: 3%;
+      padding-left: 6%;
+      padding-right: 6%;
+      background-color: none;
+      border-radius: 20px;
+      background-color: #e5d9fc;
+      border: 2px solid #e5d9fc;
+      font-family: proxima-nova, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 30px; }
+    main .formulario form textarea {
+      font-family: proxima-nova, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 30px;
+      color: #0f0d11;
+      resize: none; }
+    main .formulario form .checkbox {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      margin-bottom: 3%; }
+      main .formulario form .checkbox p {
+        font-family: proxima-nova, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        color: #e5d9fc;
+        margin-left: 45px; }
+    main .formulario form .botonesSuscribe {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      width: 100%; }
+      main .formulario form .botonesSuscribe input {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 200%;
+        margin-top: 2%;
+        background-color: #e5d9fc;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-left: 7%;
+        margin-right: 7%; }
+
+/*main 404 ERROR*/
+.mainError {
+  width: 100%;
+  height: 600px; }
+  .mainError #textoError {
+    width: 58%;
+    height: 77%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    .mainError #textoError .tituloError {
+      font-family: proxima-nova, sans-serif;
+      font-weight: 600;
+      font-style: italic;
+      color: #e5d9fc;
+      font-size: 4em;
+      text-align: center; }
+    .mainError #textoError .mensajeError {
+      font-family: proxima-nova, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #e5d9fc;
+      text-align: center; }
+    .mainError #textoError .tpwkLink {
+      font-family: proxima-nova, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 3em;
+      text-align: center; }
+    .mainError #textoError a {
+      text-decoration: none;
+      color: #e5d9fc;
+      border-bottom: 2px solid #e5d9fc; }
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #0f0d11;
+  color: #e5d9fc;
+  font-family: proxima-nova, sans-serif;
+  font-style: italic;
+  font-size: 80%;
+  font-weight: 500;
+  text-align: center; }
+  footer .redesFooter {
+    padding-top: 4%;
+    padding-bottom: 2%; }
+    footer .redesFooter li {
+      display: inline-block;
+      margin-left: 0.7%;
+      margin-right: 0.7%; }
+      footer .redesFooter li svg {
+        fill: #e5d9fc; }
+  footer .footerFinal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    footer .footerFinal p {
+      padding-left: 9%;
+      padding-right: 8%;
+      padding-bottom: 2%; }
+    footer .footerFinal .parrafoFooter {
+      padding-right: 11%;
+      padding-left: 4%; }
+
+/*footer 404 error*/
+.footerError {
+  background-color: transparent; }
+
+body {
+  background-color: #0f0d11;
+  width: 100%; }
+
+.bodyError {
+  background-image: url(../IMAGENES/fondo404.png); }

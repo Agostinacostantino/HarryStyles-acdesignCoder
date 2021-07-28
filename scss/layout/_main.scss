@@ -1,0 +1,578 @@
+/*main INDEX*/
+
+main{
+
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background: $color_fondos; 
+        width: 95%;
+        height: 605px;
+        margin-left: 2.5%;
+        border-radius: 20px;
+        border: $estilo_bordes;
+        align-items: center;
+
+        .bannerPortada{
+            margin-left: 4%;
+            justify-self: center;
+
+            img{
+                width: 650px;
+                height: 600px;
+            }
+        }
+        
+        .bannerTexto{
+            text-align: center;
+            margin-right: 6%;
+            margin-bottom: 5%;
+            color: $color_oscuro;
+
+            h1{
+                font-family: proxima-nova, sans-serif;
+                font-weight: 900;
+                font-style: italic;
+                font-size: 600%;
+                height: 80px;
+            }
+            
+            .newAlbum{
+                font-family: proxima-nova, sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 250%;
+                height: 20px;
+            }
+
+            h2{
+                font-family: proxima-nova, sans-serif;
+                font-weight: 900;
+                font-style: italic;
+                font-size: 500%;
+                height: 80px;
+            }
+
+            .outNow{
+                font-family: proxima-nova, sans-serif;
+                font-weight: 900;
+                font-style: normal;
+                font-size: 200%;
+                margin-bottom: 0;
+            }
+
+            button{
+                width: 350px;
+                padding-top: 3%;
+                padding-bottom: 3%;
+                margin-top: 3%;
+                font-family: proxima-nova, sans-serif;
+                font-weight: 600;
+                font-style: italic;
+                font-size: 150%;
+                background-color: $color_oscuro;
+                border-radius: 20px;
+                cursor: pointer;
+
+                a{
+                    text-decoration: none;
+                    color: $color_claro;
+                }
+            }
+        }
+    }
+
+    .videoIndex{
+        width: 100%;
+        background-color: $color_oscuro;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color_claro;
+        margin-top: 5%;
+
+        h3{
+            font-family: proxima-nova, sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 400%;
+            color: $color_oscuro;
+            margin-top: 3%;
+            margin-bottom: 2%;
+        }
+
+        div{
+            width: 95%;
+            height: auto;
+
+            iframe{
+                width: 90%;
+                height: 600px;
+                border-radius: 20px;
+                border: $estilo_bordes_oscuros;
+                margin-left: 4.5%;
+            }
+        }
+    }
+    
+    .carousel-inner{
+        margin-top: 5%;
+    }
+}
+
+/*fin main INDEX*/
+
+/*main MUSIC*/
+
+main{
+        
+    .h1General{
+        font-family: proxima-nova, sans-serif;
+        font-weight: 900;
+        font-style: italic;
+        color: $color_claro;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 400%;
+        padding-top: 3%;
+    }
+
+    div{
+
+        .cds{
+            display: grid;
+            height: auto;
+            width: 100%;
+            grid-template-columns: 25% 25%;
+            grid-template-rows: 100%;
+            justify-content: center;
+            column-gap: 10%;
+            padding-bottom: 5%;
+            padding-top: 3%;
+
+            figure{
+                position: relative;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                border-radius: 5%;
+                cursor:pointer;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    transition: all 500ms ease-out;
+                    }
+                
+                .streamCd{
+                    position: absolute;
+                    top:0;
+                    width: 100%;
+                    height: 100%;
+                    background-color:$color_fondos ;
+                    transition: all 500ms ease-out;
+                    opacity: 0;
+                    visibility: hidden;
+                    text-align: center;
+
+                    a{
+                        text-decoration: none;
+                        color: $color_oscuro;
+                    }
+                }
+
+                &:hover > .streamCd{
+                    opacity: 1;
+                    visibility: visible;
+
+                    button{
+                        margin-top: 45%;
+                        font-family: proxima-nova, sans-serif;
+                        font-weight: 500;
+                        font-style: italic;
+                        font-size: 100%;
+                        border-radius: 20px;
+                        background-color: $color_claro;
+                        padding-top: 4%;
+                        padding-bottom: 4%;
+                        padding-left: 8%;
+                        padding-right: 8%;
+                    }
+                }
+            }
+        }
+    }
+
+    div{
+
+        .sencillos{
+            @extend .cds;
+            grid-template-columns: 20% 20% 20%;
+            grid-template-rows: 50% 50%;
+            column-gap: 5%;
+            row-gap: 3%;
+
+            figure{
+                position: relative;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                border-radius: 5%;
+                cursor:pointer;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    transition: all 500ms ease-out;
+                }
+
+                .streamCancion{
+                    @extend .streamCd;
+
+                    a{
+                        text-decoration: none;
+                        color: $color_oscuro;
+                    }
+                }
+
+                &:hover > .streamCancion{
+                    opacity: 1;
+                    visibility: visible;
+
+                    button{
+                        margin-top: 45%;
+                        font-family: proxima-nova, sans-serif;
+                        font-weight: 500;
+                        font-style: italic;
+                        font-size: 100%;
+                        border-radius: 20px;
+                        background-color: $color_claro;
+                        padding-top: 4%;
+                        padding-bottom: 4%;
+                        padding-left: 8%;
+                        padding-right: 8%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*fin main MUSIC*/
+
+/*main MULTIMEDIA*/
+
+main{
+
+    .galeriaFotos{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 400px 400px;
+        grid-template-areas:"foto1   foto2   foto3"
+                            "foto4   foto5   foto6";
+        justify-content: center;
+        align-items: center;
+        column-gap: 5%;
+        row-gap: 3%;
+        padding-top: 7%;
+        padding-bottom: 5%;
+
+        .galeria1{
+                grid-area: foto1;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+
+        .galeria2{
+            @extend .galeria1;
+            grid-area: foto2;
+        }
+
+        .galeria3{
+            @extend .galeria1;
+            grid-area: foto3;
+        }
+
+        .galeria4{
+            @extend .galeria1;
+            grid-area: foto4;
+        }
+
+        .galeria5{
+            @extend .galeria1;
+            grid-area: foto5;
+        }
+
+        .galeria6{
+            @extend .galeria1;
+            grid-area: foto6;
+        }
+    }
+
+
+    .h2Multimedia{
+        position: absolute;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 400%;
+        color:$color_claro; 
+        margin-left: 42%;
+        padding-top: 3%;
+    }
+
+    .videos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+
+        iframe{
+            margin-top: 10%;
+            border-radius: 20px;
+            border:$estilo_bordes;
+        }
+
+        .video2{
+            margin-top: 3%;
+            border-radius: 20px;
+            border: $estilo_bordes;
+            margin-bottom: 5%;
+        }
+    }
+}
+
+/*fin main MULTIMEDIA*/
+
+/*main TOUR*/
+
+main{
+
+    .tour{
+        width: 100%;
+        position: relative;
+
+        .bannerTour{
+            position: absolute;
+            width: 100%;
+        }
+
+        .tourTexto{
+            position: absolute;
+            width: 100%;
+
+            .harryStyles{
+                display: inline-block;
+                font-family: proxima-nova, sans-serif;
+                font-weight: 900;
+                font-size: 700%;
+                font-style: normal;
+                color: $color_claro;
+                line-height: 80%;
+                text-align: center;
+                margin-left: 63%;
+                padding-top: 6%;
+            }
+
+            .tourName{
+                display: inline-block;
+                font-family: proxima-nova, sans-serif;
+                font-weight: 900;
+                font-size: 350%;
+                font-style: normal;
+                color: $color_claro;
+                text-align: center;
+                margin-left: 63%;
+            }
+        }
+    }
+
+    .tablaConciertos{
+        width: 100%;
+        padding-top: 45%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+
+        table{
+            display: table-column;
+            border-spacing: 300px 50px;
+            border-collapse: inherit;
+
+            tr{
+
+                th{
+                    font-family: proxima-nova, sans-serif;
+                    font-weight: 900;
+                    font-style: italic;
+                    font-size: 350%;
+                    color: $color_claro;
+                }
+
+                td{
+                    text-align: center;
+                    font-family: proxima-nova, sans-serif;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 150%;
+                    color: $color_claro;
+
+                    button{
+                        padding-left: 8%;
+                        padding-right: 8%;
+                        padding-top: 4.5%;
+                        padding-bottom: 4%;
+                        font-family: proxima-nova, sans-serif;
+                        font-weight: 700;
+                        font-style: normal;
+                        font-size: 130%;
+                        margin-top: 2%;
+                        background-color:$color_claro;
+                        border-radius: 20px;
+                        cursor: pointer;
+
+                        a{
+                            text-decoration: none;
+                            color:$color_oscuro ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*fin main TOUR*/
+
+/*main SUSCRIBE*/
+
+main{
+    .formulario{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+
+        form{
+            width: 40%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+
+            .formularioDatos{
+                margin-bottom: 3%;
+                padding-bottom: 3%;
+                padding-top: 3%;
+                padding-left: 6%;
+                padding-right: 6%;
+                background-color: none;
+                border-radius: 20px;
+                background-color:$color_claro ;
+                border: $estilo_bordes;
+                font-family: proxima-nova, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 30px;
+            }
+
+            textarea{
+                font-family: proxima-nova, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 30px;
+                color: $color_oscuro;
+                resize: none;
+            }
+
+            .checkbox{
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                margin-bottom: 3%;
+            
+                p{
+                    font-family: proxima-nova, sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 18px;
+                    color: $color_claro;
+                    margin-left: 45px;
+                }
+            }
+
+            .botonesSuscribe{
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                width: 100%;
+                input{
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    padding-top: 3%;
+                    padding-bottom: 3%;
+                    font-family: proxima-nova, sans-serif;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 200%;
+                    margin-top: 2%;
+                    background-color: $color_claro;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    margin-left: 7%;
+                    margin-right: 7%;
+                }
+            }
+        }
+    }
+}
+
+/*main 404 ERROR*/
+
+.mainError{
+    width: 100%;
+    height: 600px;
+
+    #textoError{
+        width: 58%;
+        height: 77%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .tituloError{
+            font-family: proxima-nova, sans-serif;
+            font-weight: 600;
+            font-style: italic;
+            color: $color_claro;
+            font-size: 4em;
+            text-align: center;
+        }
+
+        .mensajeError{
+            font-family: proxima-nova, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color:$color_claro;
+            text-align: center;
+        }
+
+        .tpwkLink{
+            font-family: proxima-nova, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 3em;
+            text-align: center;
+        }
+
+        a{
+            text-decoration:none;
+            color: $color_claro;
+            border-bottom: $estilo_bordes;
+            }
+    }
+}
