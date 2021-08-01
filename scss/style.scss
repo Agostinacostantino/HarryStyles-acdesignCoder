@@ -4,7 +4,6 @@
 @import "layout/header";
 @import "layout/main";
 @import "layout/footer";
-@import "layout/mediaq";
 
 body{
     background-color: rgb(15, 13, 17);
@@ -14,3 +13,5 @@ body{
 .bodyError{
     background-image: url(../IMAGENES/fondo404.png);
 }
+
+@import "layout/mediaq"

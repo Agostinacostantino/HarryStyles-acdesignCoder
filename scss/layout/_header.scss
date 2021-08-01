@@ -28,12 +28,15 @@ header{
             .nav-item{
                 font-family: proxima-nova, sans-serif;
                 font-weight: 500;
-                font-size: 1.2rem;
-                font-style: italic;
+                font-size: 1.2em;
+                font-style: normal;
 
                 .nav-link{
                     text-decoration: none;
                     color: $color_claro;
+                    &:hover{
+                        font-style: italic;
+                    }
                 }
             }
 
