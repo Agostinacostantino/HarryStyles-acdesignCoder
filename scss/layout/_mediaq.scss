@@ -799,7 +799,7 @@
         
         #textoError{
             height: 91%;
-            
+
             .tituloError{
                 font-size: 2em;
             }
@@ -813,6 +813,7 @@
             }
         }
     }
+    /*fin 404 Error*/
 
 }
 
@@ -1069,5 +1070,61 @@
         }
     }
     /*fin suscribe*/
+
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2){
+
+    /*multimedia*/ 
+    main{
+        .galeriaFotos{
+            grid-template-columns: 165px 165px;
+            grid-template-rows: 207px 207px 207px;
+        }
+
+        .videos{
+            iframe{
+                height: 187px;
+            }
+        }
+    }
+    /*multimedia*/
+
+    /*tour*/
+    main{
+        
+        .tour{
+
+            .tourTexto{
+
+                .tourName{
+                    margin-left: 64%;
+                }
+            }
+        }
+
+        .tablaConciertos{
+
+            table{
+                border-spacing: 25px 35px;
+                tr{
+
+                    th{
+                        font-size: 1.4em;
+                    }
+
+                    td{
+                        font-size: 1em;
+
+                        button{
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*fin tour*/
 
 }

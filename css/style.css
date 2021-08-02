@@ -887,7 +887,8 @@ body {
     .mainError #textoError .mensajeError {
       font-size: 0.7em; }
     .mainError #textoError .tpwkLink {
-      font-size: 1.4em; } }
+      font-size: 1.4em; }
+  /*fin 404 Error*/ }
 
 @media only screen and (max-width: 320px) {
   /*music*/
@@ -993,3 +994,24 @@ body {
   main .formulario form .botonesSuscribe input {
     font-size: 2.3em; }
   /*fin suscribe*/ }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /*multimedia*/
+  main .galeriaFotos {
+    grid-template-columns: 165px 165px;
+    grid-template-rows: 207px 207px 207px; }
+  main .videos iframe {
+    height: 187px; }
+  /*multimedia*/
+  /*tour*/
+  main .tour .tourTexto .tourName {
+    margin-left: 64%; }
+  main .tablaConciertos table {
+    border-spacing: 25px 35px; }
+    main .tablaConciertos table tr th {
+      font-size: 1.4em; }
+    main .tablaConciertos table tr td {
+      font-size: 1em; }
+      main .tablaConciertos table tr td button {
+        font-size: 1.2em; }
+  /*fin tour*/ }
