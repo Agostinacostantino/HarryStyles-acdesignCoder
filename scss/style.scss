@@ -11,6 +11,10 @@ body{
 }
 
 .bodyError{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: $color_oscuro;
     background-image: url(../IMAGENES/fondo404.png);
 }
 

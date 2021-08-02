@@ -28,7 +28,44 @@
 }
 
 @media only screen and (max-width:1200px){
+    /*tour*/
+    main{
+        .tour{
+            .tourTexto{
+                .harryStyles{
+                    margin-left: 66%;
+                    font-size: 5em;
+                }
 
+                .tourName{
+                    font-size: 3em;
+                }
+            }
+        }
+
+        .tablaConciertos{
+            table{
+                border-spacing: 196px 41px;
+            }
+        }
+    }
+    /*fin tour*/
+
+    /*404 error*/ 
+    .mainError{
+
+        #textoError{
+        
+            .tituloError{
+                font-size: 3em;
+            }
+
+            .tpwkLink{
+                font-size: 2.5em;
+            }
+        }    
+    }
+    /*fin 404 error*/
 }
 
 
@@ -76,6 +113,15 @@
         }
     }
     /*multimedia*/
+
+    /*404 error*/  
+    .mainError{
+        
+        #textoError{
+            width: 66%;
+        }
+    }
+    /*fin 404 error*/
 }
 
 @media only screen and (max-width:950px){
@@ -158,6 +204,42 @@
         }
     }
     /*fin multimedia*/
+
+    /*tour*/ 
+    main{
+
+        .tour{
+            .tourTexto{
+
+                .harryStyles{
+                    margin-left: 64%;
+                    font-size: 4em;
+                }
+
+                .tourName{
+                    margin-left: 64%;
+                    font-size: 2em;
+                }
+            }
+        }
+
+        .tablaConciertos{
+            table{
+                border-spacing: 123px 49px;
+            }
+        }
+    }
+    /*fin tour*/ 
+
+    /*404 error*/ 
+    .mainError{
+
+        #textoError{
+            width: 72%;
+            height: 86%;
+        }
+    }
+    /*fin 404 error*/
 }
 
 
@@ -231,6 +313,73 @@
         }
     }
     /*multimedia*/
+
+    /*tour*/ 
+    main{
+
+        .tour{
+
+            .tourTexto{
+
+                .harryStyles{
+                    margin-left: 67%;
+                    font-size: 3em;
+                }
+
+                .tourName{
+                    margin-left: 64.5%;
+                    font-size: 1.8em;
+                }
+            }
+        }
+
+        .tablaConciertos{
+
+            table{
+                border-spacing: 76px 50px;
+                
+                tr{
+
+                    th{
+                        font-size: 2.5em;
+                    }
+
+                    td{
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+    }
+    /*fin tour*/
+
+    /*suscribe*/ 
+    main{
+
+        .formulario{
+
+            form{
+                width: 58%;
+            }
+        }
+    }
+    /*fin suscribe*/
+
+    /*404 error*/ 
+    .main{
+
+        #textoError{
+            
+            .tituloError{
+                font-size: 2.5em;
+            }
+
+            .tpwkLink{
+                font-size: 2em;
+            }
+        }
+    }
+    /*fin 404 error*/
 }
 
 @media only screen and (max-width:576px){
@@ -310,6 +459,83 @@
         }
     }
     /*multimedia*/
+
+    /*tour*/
+    main{
+
+        .tour{
+
+            .tourTexto{
+
+                .harryStyles{
+                    margin-left: 67%;
+                    font-size: 2em;
+                    padding-top: 9%;
+                }
+
+                .tourName{
+                    margin-left: 65%;
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+        .tablaConciertos{
+
+            table{
+
+                tr{
+
+                    th{
+                        font-size: 2em;
+                    }
+
+                    td{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+    /*fin tour*/
+
+    /*suscribe*/
+    main{
+        .formulario{
+            margin-bottom: 13%;
+
+            form{
+                width: 67%;
+
+                .formularioDatos{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+    /*fin suscribe*/
+
+    /*404 error*/
+    .bodyError{
+        background-image: url(../IMAGENES/fondo404MQ.png);
+    }
+
+    .mainError{
+
+        #textoError{
+            width: 99%;
+            height: 94%;
+
+            .tituloError{
+                font-size: 2.8em;
+            }
+
+            .tpwkLink{
+                font-size: 2em;
+            }
+        }
+    }
+    /*fin 404 Error*/
 }
 
 @media only screen and (max-width:460px){
@@ -371,6 +597,76 @@
         }
     }
     /*multimedia*/
+
+    /*tour*/
+    main{
+        
+        .tour{
+
+            .tourTexto{
+
+                .tourName{
+                    margin-left: 64%;
+                }
+            }
+        }
+
+        .tablaConciertos{
+
+            table{
+                border-spacing: 41px 50px;
+                tr{
+
+                    th{
+                        font-size: 1.7em;
+                    }
+
+                    td{
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+    /*fin tour*/
+
+    /*suscribe*/ 
+    main{
+        .formulario{
+            form{
+                width: 77%;
+
+                .formularioDatos{
+                    font-size: 1em;
+                }
+
+                .checkbox{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    /*fin suscribe*/
+
+    /*404 Error*/ 
+    .mainError{
+
+        #textoError{
+
+            .tituloError{
+                font-size: 2.5em;
+            }
+
+            .mensajeError{
+                font-size: 0.9em;
+            }
+
+            .tpwkLink{
+                font-size: 1.7em;
+            }
+        }
+    }
+    /*fin 404 Error*/
 
 }
 
@@ -452,6 +748,72 @@
     }
     /* fin multimedia*/
 
+    /*tour*/ 
+    main{
+
+        .tour{
+
+            .tourTexto{
+
+                .harryStyles{
+                    margin-left: 64%;
+                    font-size: 1.7em;
+                    padding-top: 7%;
+                }
+
+                .tourTexto{
+                    font-size: 1em;
+                    margin-left: 62%;
+                }
+            }
+        }
+
+        .tablaConciertos{
+
+            table{
+                border-spacing: 23px 30px;
+                tr{
+                    td{
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+    }
+    /*fin tour*/
+
+    /*suscribe*/ 
+    main{
+        .formulario{
+            form{
+                .checkbox{
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+    /*fin suscribe*/
+
+    /*404 Error*/ 
+    .mainError{
+        
+        #textoError{
+            height: 91%;
+            
+            .tituloError{
+                font-size: 2em;
+            }
+
+            .mensajeError{
+                font-size: 0.7em;
+            }
+
+            .tpwkLink{
+                font-size: 1.4em;
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width:320px){
@@ -491,12 +853,77 @@
         }
     }
     /* fin multimedia*/
+
+    /*tour*/ 
+    main{
+
+        .tour{
+
+            .tourTexto{
+
+                .harryStyles{
+                    font-size: 1.5em;
+                }
+
+                .tourName{
+                    font-size: 0.9em;
+                    margin-left: 60.5%;
+                }
+            }
+        }
+
+        .tablaConciertos{
+
+            table{
+
+                tr{
+
+                    th{
+                        font-size: 1.3em;
+                    }
+
+                    td{
+                        font-size: 0.6em;
+                    }
+                }
+            }
+        }
+    }
+    /*fin tour*/
+
+    /*suscribe*/ 
+    main{
+        .formulario{
+
+            form{
+
+                .formularioDatos{
+                    font-size: 0.8em;
+                }
+
+                .checkbox{
+                    p{
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }
+    }
+    /*fin suscribe*/
 }
 
 @media only screen and (min-width:2000px){
     header{
         img{
-            width: 530px;
+            width: 680px;
+        }
+
+        .navbar{
+            .container-fluid{
+                .nav-item{
+                    font-size: 2em;
+                }
+            }
         }
     }
 
@@ -577,4 +1004,70 @@
         }
     }
     /*multimedia*/
+
+    /*tour*/ 
+    main{
+        .tour{
+            .tourTexto{
+
+                .harryStyles{
+                    font-size: 11em;
+                    margin-left: 65%;
+                }
+
+                .tourName{
+                    margin-left: 62.5%;
+                    font-size: 6.5em;
+                }
+            }
+        }
+
+        .tablaConciertos{
+            table{
+                border-spacing: 500px 60px;
+
+                tr{
+
+                    th{
+                        font-size: 6.5em;
+                    }
+
+                    td{
+                        font-size: 2.5em;
+                    }
+                }
+            }
+        }
+    }
+    /*fin tour*/
+
+    /*suscribe*/ 
+    main{
+
+        .formulario{
+
+            form{
+
+                .checkbox{
+
+                    input{
+                        margin-top: 2.5%;
+                    }
+
+                    p{
+                        font-size: 2.5em;
+                    }
+                }
+
+                .botonesSuscribe{
+
+                    input{
+                        font-size: 2.3em;
+                    }
+                }
+            }
+        }
+    }
+    /*fin suscribe*/
+
 }
