@@ -1076,20 +1076,6 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2){
 
-    /*multimedia*/ 
-    main{
-        .galeriaFotos{
-            grid-template-columns: 165px 165px;
-            grid-template-rows: 207px 207px 207px;
-        }
-
-        .videos{
-            iframe{
-                height: 187px;
-            }
-        }
-    }
-    /*multimedia*/
 
     /*tour*/
     main{
